@@ -3,6 +3,7 @@ require "application_system_test_case"
 class QuotesTest < ApplicationSystemTestCase
   setup do
     login_as users(:accountant)
+    # @quote = quotes(:first)
     @quote = Quote.ordered.first
   end
 
